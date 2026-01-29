@@ -8,6 +8,13 @@
     <artifactId>JavaStaticSite</artifactId>
     <version>1.0.1</version>
 
+    <name>JavaStaticSite</name>
+    <description>Generate static sites from Java</description>
+    <organization>
+        <url>https://github.com/boyninja1555</url>
+        <name>boyninja1555</name>
+    </organization>
+
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
