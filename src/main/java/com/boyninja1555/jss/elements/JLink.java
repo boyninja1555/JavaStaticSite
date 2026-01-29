@@ -23,7 +23,7 @@ public class JLink extends JElement {
      */
     @ApiStatus.Internal
     public JLink(Rel rel, String href) {
-        super("head", Map.of(
+        super("link", Map.of(
                 "rel", rel.value,
                 "href", href
         ), true);

@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -41,9 +42,9 @@ public abstract class JPage {
         Map<JLink.Rel, String> imports = imports();
 
         if (imports == null)
-            imports = Map.of();
+            imports = new HashMap<>();
 
-        imports.forEach((r, h) -> headElement.appendChild(new JLink(r, h)));
+        new HashMap<>(imports).forEach((r, h) -> headElement.appendChild(new JLink(r, h)));
         JBody bodyElement = new JBody(List.of(structure()));
         JHtml rootElement = new JHtml(meta.language(), headElement, bodyElement);
         String root = rootElement.toString();
