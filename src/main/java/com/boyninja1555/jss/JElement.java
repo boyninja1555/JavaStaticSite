@@ -2,6 +2,7 @@ package com.boyninja1555.jss;
 
 import org.jetbrains.annotations.ApiStatus;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,17 +17,17 @@ public class JElement {
 
     public JElement(String name, Map<String, String> attributes, boolean selfClosing, List<JElement> children) {
         this.name = name;
-        this.attributes = attributes;
+        this.attributes = new HashMap<>(attributes);
         this.selfClosing = selfClosing;
-        this.children = children;
+        this.children = new ArrayList<>(children);
         this.text = null;
     }
 
     public JElement(String name, Map<String, String> attributes, boolean selfClosing) {
         this.name = name;
-        this.attributes = attributes;
+        this.attributes = new HashMap<>(attributes);
         this.selfClosing = selfClosing;
-        this.children = List.of();
+        this.children = new ArrayList<>();
         this.text = null;
     }
 
@@ -34,7 +35,7 @@ public class JElement {
         this.name = null;
         this.attributes = new HashMap<>();
         this.selfClosing = false;
-        this.children = List.of();
+        this.children = new ArrayList<>();
         this.text = text;
     }
 

@@ -6,7 +6,7 @@
 
     <groupId>com.boyninja1555</groupId>
     <artifactId>java-static-site</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <name>JavaStaticSite</name>
     <description>Generate static sites from Java</description>
