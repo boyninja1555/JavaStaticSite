@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.boyninja1555</groupId>
-    <artifactId>JavaStaticSite</artifactId>
+    <artifactId>java-static-site</artifactId>
     <version>1.0.1</version>
 
     <name>JavaStaticSite</name>
@@ -14,6 +14,14 @@
         <url>https://github.com/boyninja1555</url>
         <name>boyninja1555</name>
     </organization>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub boyninja1555 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/boyninja1555/JavaStaticSite</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
